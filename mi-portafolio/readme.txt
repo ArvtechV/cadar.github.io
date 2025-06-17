@@ -1,6 +1,6 @@
-# Portafolio de Carlos Rodríguez
+# Portafolio de Carlos Del Angel
 
-Bienvenido a mi portafolio web personal. Soy desarrollador con experiencia en ventas, desarrollo web y aplicaciones móviles. Este sitio presenta algunos de mis proyectos, habilidades y forma de contacto.
+Bienvenido a mi portafolio web personal. Soy desarrollador con experiencia en desarrollo web y aplicaciones móviles. Este sitio presenta algunos de mis proyectos, habilidades y forma de contacto.
 
 ## 🚀 Tecnologías utilizadas
 
