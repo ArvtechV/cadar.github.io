@@ -1,0 +1,405 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-top: 80px; /* Compensa la altura de la navbar */
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #222;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00d4ff;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.resaltado {
+  color: #00d4ff;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn,
+.btn-cv {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #00d4ff;
+  color: #000;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover,
+.btn-cv:hover {
+  background-color: #00aacc;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  border: 2px solid #00d4ff;
+  color: #00d4ff;
+}
+
+.btn-secundario:hover {
+  background-color: #00d4ff;
+  color: #000;
+}
+
+/* =========================
+   SECCIÓN SOBRE MÍ
+========================= */
+.sobre-mi {
+  background-color: #121212;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.sobre-mi .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.sobre-mi h2 {
+  font-size: 2.5rem;
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+.sobre-mi p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.sobre-mi h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.habilidades {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.habilidades li {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  color: #00d4ff;
+  font-weight: 500;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #00d4ff;
+}
+
+/* =========================
+   PROYECTOS
+========================= */
+.proyectos {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.proyectos h2 {
+  font-size: 2.5rem;
+  color: #00d4ff;
+  margin-bottom: 40px;
+}
+
+.galeria-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta-proyecto {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00d4ff44;
+}
+
+.tarjeta-proyecto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+}
+
+.tarjeta-proyecto h3 {
+  font-size: 1.4rem;
+  color: #00d4ff;
+}
+
+.tarjeta-proyecto p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.tarjeta-proyecto a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.tarjeta-proyecto a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+.contacto {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  color: #00d4ff;
+  margin-bottom: 20px;
+}
+
+.contacto p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.redes a img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.redes a:hover img {
+  transform: scale(1.2);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background-color: #000;
+  color: #666;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* =========================
+   SPOTLIGHT
+========================= */
+.spotlight {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.1) 0%, transparent 200px);
+  z-index: 9999;
+  mix-blend-mode: overlay;
+}
+
+/* =========================
+   TILT 3D EFFECT
+========================= */
+.tilt {
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.tilt:hover {
+  transform: rotateY(10deg) rotateX(10deg);
+}
+
+/* =========================
+   GUESTBOOK
+========================= */
+.guestbook,
+#guestbook {
+  background-color: #111;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+}
+
+.guestbook h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00d4ff;
+}
+
+#guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#guestbook-form input,
+#guestbook-form textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  resize: vertical;
+}
+
+#guestbook-form button {
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#guestbook-form button:hover {
+  background: #00aacc;
+}
+
+#guestbook-entries {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry {
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #00d4ff;
+}

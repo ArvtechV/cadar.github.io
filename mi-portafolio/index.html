@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">MiPortafolio</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span class="resaltado">Carlos D'AR</span></h1>
+      <h2>Desarrollador Movil & Web</h2>
+      <p>Apasionado por crear experiencias digitales únicas y funcionales.</p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-secundario">Contáctame</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre-mi" class="sobre-mi" data-aos="zoom-in" data-aos-delay="200">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy Carlos del Angel Ramirez, un desarrollador apasionado por la tecnología, especializado en programacion Movil, Modelado 3D, desarrollo web con HTML/CSS y diseño de experiencias digitales intuitivas.
+      </p>
+      <img src="images/carlosdelangel.jpg" alt="Carlos Del Angel Ramirez" class="foto-perfil">
+      <p>
+        <a href="assets/CV_CarlosDelAngel.pdf" class="btn-cv" download>📄 Descargar CV</a>
+      </p>
+      <h3>Habilidades</h3>
+      <ul class="habilidades">
+        <li>Flutter & Dart</li>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>Firebase</li>
+        <li>UI/UX básico</li>
+        <li>React Native</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>REST APIs</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Power BI</li>
+        <li>GitHub</li>
+        <li>Excel</li>
+        <li>PostgreSQL</li>
+        <li>Blender</li>
+        <li>Maya</li>
+        <li>Adobe Photoshop</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="proyectos" class="proyectos" data-aos="fade-up">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="galeria-proyectos">
+        <div class="tarjeta-proyecto">
+          <img src="images/calculadora.png" alt="Calculadora Flutter">
+          <h3>Calculadora Flutter</h3>
+          <p>Aplicación de calculadora avanzada desarrollada en Flutter con un diseño limpio y responsivo inspirado en iOS.
+             Incluye operaciones básicas (+, −, ×, ÷), historial interactivo con edición y eliminación de operaciones,
+              asignación de títulos personalizados, exportación a USB, y almacenamiento local con Hive.</p>
+            <a href="https://github.com/tuusuario/calculadora-flutter" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="tarjeta-proyecto">
+          <img src="images/portafolio.png" alt="Portafolio Web">  
+          <img src="images/portafolio2.PNG ">
+          <h3>Portafolio Web</h3>
+          <p>Este proyecto es una libreta de visitas interactiva desarrollada con JavaScript moderno y Firebase.
+             Permite a los usuarios dejar mensajes y ver comentarios en tiempo real, gracias a la integración con Firestore.</p>
+          <a href="https://github.com/tuusuario/portafolio" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="tarjeta-proyecto">
+          <img src="images/snake-game.png" alt="Snake Game">
+          <h3>Snake Classic Revival</h3>
+          <p>Una versión moderna del clásico juego Snake, desarrollado con Flutter y Dart, que combina la nostalgia de los teléfonos de los 90 con mejoras actuales.</p>
+          <a href="https://github.com/tuusuario/snake-flutter" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="tarjeta-proyecto">
+          <img src="images/mercados.png" alt="App Mercados">
+          <h3>Comparador de Mercados</h3>
+          <p>Desarrollé una aplicación móvil en Flutter enfocada en ayudar a los usuarios 
+            a comparar precios de productos entre diferentes tiendas y negocios locales. 
+            La app permite a los comerciantes publicar productos con texto, 
+            imagen o ambos, organizarlos por categoría y mostrarlos a los usuarios 
+            finales con una interfaz limpia y fácil de usar.</p>
+          <a href="https://github.com/tuusuario/mercados-flutter" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="tarjeta-proyecto">
+          <img src="images/mercados.png" alt="Punto de Venta Android y PC">
+          <h3>Punto de venta</h3>
+          <p>Sistema de punto de venta desarrollado en Flutter, diseñado para funcionar tanto en dispositivos móviles Android,
+             como en equipos de escritorio Windows y Linux, con un enfoque en escalabilidad, rendimiento offline y experiencia de usuario intuitiva.</p>
+          <a href="https://github.com/tuusuario/puntoventaar" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="tarjeta-proyecto">
+          <img src="images/login.png" alt="Login en Flutter">
+          <h3>Login</h3>
+          <p>Desarrollé una pantalla de inicio de sesión (login) utilizando Flutter y Firebase Authentication, 
+            enfocada en una experiencia de usuario limpia, segura y eficiente. 
+            La integración se realizó paso a paso en Visual Studio Code, 
+            con una estructura modular para facilitar el mantenimiento y escalabilidad del proyecto.</p>
+          <a href="https://github.com/tuusuario/login" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="tarjeta-proyecto">
+          <img src="images/spa1.PNG" alt="Spa Embudo">
+         
+          <h3>Spa Serenity</h3>
+          <p>Desarrollé un embudo web completo para agendamiento automático de citas en un SPA, 
+            utilizando tecnologías tradicionales como HTML, CSS, PHP y MySQL. 
+            El objetivo fue guiar al usuario desde el interés inicial hasta la conversión (cita registrada), 
+            ofreciendo una experiencia limpia, responsiva y centrada en la acción.</p>
+          <a href="https://github.com/tuusuario/spaembudo" target="_blank">Ver en GitHub</a>
+        </div>
+
+        
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¿Te interesa trabajar conmigo? Escríbeme por el medio que prefieras:</p>
+      <div class="redes">
+        <a href="mailto:carlosdar_13@outlook.com" title="Correo">
+          <img src="images/icono-email.png" alt="Correo">
+        </a>
+        <a href="https://wa.me/5211234567890?text=¡Hola!%20Vi%20tu%20portafolio" title="WhatsApp">
+          <img src="images/icono-whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://github.com/ArvtechV" title="GitHub">
+          <img src="images/icono-github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/carlosdart" title="LinkedIn">
+          <img src="images/icono-linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="guestbook">
+    <h2>📖 Libro de Visitas</h2>
+    <form id="guestbook-form">
+  <input type="text" id="name" name="name" required placeholder="Tu nombre">
+  <textarea id="message" name="message" required placeholder="Tu mensaje"></textarea>
+  <input type="text" name="hp" style="display: none;"> <!-- Honeypot -->
+  <button type="submit">Enviar</button>
+    </form>
+    <div id="guestbook-entries"></div>
+  </section>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Animación de Spotlight -->
+  <div class="spotlight"></div>
+  <script>
+    const spotlight = document.querySelector('.spotlight');
+    document.addEventListener('mousemove', (e) => {
+      spotlight.style.setProperty('--x', `${e.clientX}px`);
+      spotlight.style.setProperty('--y', `${e.clientY}px`);
+    });
+  </script>
+
+  <!-- Cursor personalizado -->
+  <div class="custom-cursor"></div>
+
+
+
+  <!-- Footer dinámico -->
+  <footer class="footer">
+    <p>© <span id="year"></span> CaDAR. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+<script type="module" src="js/guestbook.js"></script>
+
+
+</body>
+</html>
